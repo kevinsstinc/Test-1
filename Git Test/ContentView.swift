@@ -12,6 +12,8 @@ struct ContentView: View {
     var body: some View {
         ForEach(listy, id:\.self){listable in
             Text(listable)
+                .bold
+                                  
     }
 }
 
