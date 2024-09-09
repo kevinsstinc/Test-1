@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var listy = [""]
+    @State private var listy = ["salkjsa", "saxuj"]
     var body: some View {
-        ForEach(listy, id:\.self){listable in
-            Text(listable)
-                .bold
-                                  
+        List{
+            ForEach(listy, id:\.self){listable in
+                Text("\(listable)")
+                    .bold()
+            }
+            
+        }
     }
 }
 
