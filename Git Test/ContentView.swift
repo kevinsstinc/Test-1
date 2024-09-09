@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var listy = [""]
     var body: some View {
-        List{
-            Text("Test for GitHub")
-        }
+        ForEach(listy, id:\.self){listable in
+            Text(listable)
     }
 }
 
